@@ -1,0 +1,126 @@
+/* Basic Reset & Theming */
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Courier New', monospace;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 2rem;
+}
+
+main {
+    max-width: 800px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    color: #0ff; /* Cyan for a retro terminal look */
+    margin-bottom: 0.5rem;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #ccc;
+}
+
+/* Form & Fieldsets */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+fieldset {
+    border: 1px solid #fff;
+    padding: 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+legend {
+    color: #0ff;
+    padding: 0 0.5rem;
+    font-weight: bold;
+}
+
+/* Inputs, Labels & Placeholders */
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="file"] {
+    background-color: #111;
+    color: #fff;
+    border: 1px solid #555;
+    padding: 0.8rem;
+    font-family: 'Courier New', monospace;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input:focus {
+    outline: none;
+    border-color: #0ff;
+}
+
+::placeholder {
+    color: #888;
+}
+
+label {
+    margin-bottom: -0.5rem;
+    color: #ccc;
+}
+
+.ref-divider {
+    border: 0;
+    border-top: 1px dashed #555;
+    margin: 0.5rem 0;
+}
+
+/* Button & Indicators */
+button {
+    background-color: #0ff;
+    color: #000;
+    border: none;
+    padding: 1rem;
+    font-family: 'Courier New', monospace;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #fff;
+}
+
+button:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+}
+
+.hidden {
+    display: none;
+}
+
+#loadingIndicator, #successMessage {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+#loadingIndicator {
+    color: #ff0; /* Yellow */
+}
+
+#successMessage {
+    color: #0f0; /* Green */
+}
